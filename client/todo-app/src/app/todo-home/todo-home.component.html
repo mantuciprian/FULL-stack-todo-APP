@@ -1,0 +1,23 @@
+
+<div>
+    <form class='addItem' (submit)="addAction($event)">
+      <div class='add1'><input class='addField' type="text" name='action' [(ngModel)]='action'/></div> 
+      <div class='add2'><input class='addFieldBtn' type="submit" value='Add action' /></div>
+    </form>
+
+    <div class='action-item'>
+        <div class='action-name header'>Actions</div> 
+        <div class='action-status header'>Status</div> 
+        <div class='manage header'>Manage actions</div>
+        <div class='edit-container header'>Edit action</div>
+    </div>
+
+   <div class='action-item itm2' *ngFor='let action of todos; let i = index'>
+   <div class='action-name cells' [ngStyle]="{'background-color':i % 2 === 0 ? '#EBEBEB' : '#FFFFFF' }"><p>{{action.action}}</p></div> 
+   <div class='action-status cells' [ngStyle]="{'background-color':i % 2 === 0 ? '#EBEBEB' : '#FFFFFF' }"><p><input (change)='updateStatus($event, action)' type="checkbox" [(ngModel)]='action.done'></p> </div>
+   <div class='manage cells' [ngStyle]="{'background-color':i % 2 === 0 ? '#EBEBEB' : '#FFFFFF' }"><p> <button (click)= 'deleteAction($event, action)'>Delete</button> <button>Edit</button></p> </div> 
+   <div class='edit-container cells' [ngStyle]="{'background-color':i % 2 === 0 ? '#EBEBEB' : '#FFFFFF' }"> <p><input name='actionName' #actionName [ngModel]='action.action' type="text"/><button (click)='updateAction($event, action, actionName)'>Save</button><button (click)='cancelChange(i, actionName)'>Cancel</button></p> </div>
+   </div>
+
+
+</div>

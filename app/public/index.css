@@ -1,0 +1,6 @@
+.series {
+    display: flex;
+}
+.series div {
+    margin-left: 20px;
+}

@@ -1,0 +1,179 @@
+
+.action-item{
+    display:flex;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    width:100%;   
+}
+.action-name {
+    width:350px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    // background-color: antiquewhite;
+}
+.action-status {
+    width:60px;
+    text-align: center;
+    color: greenyellow
+    // background-color: rgb(153, 233, 233);
+}
+.manage {
+    width: 150px;
+    text-align: center;
+    // background-color: antiquewhite;
+}
+
+.edit-container{
+    text-align: center;
+    width:300px;
+    // background-color: rgb(153, 233, 233);
+    input {
+        max-width: 150px;
+    }
+}
+.header {
+    color: #CED3D9;
+    background-color: #1A1F25;
+    border-left: 1px solid #CED3D9;
+    border-right: 1px solid #CED3D9;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+.cells {
+    box-sizing: border-box;
+    border-left: 1px solid #CED3D9;
+    border-right: 1px solid #CED3D9;
+    padding: 5px 0px;
+}
+.itm2 {
+    position: relative;
+    top:-3px;
+   
+}
+ button {
+     width: 55px;
+     margin:2px;
+ }
+ .addItem {
+     text-align: center;
+     padding:20px;
+     box-sizing: border-box;
+     width:860px;
+     background-color: #19B5FE;
+     margin:auto;
+     margin-bottom: 5px;
+     display:flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ .add1 {
+     width: 50%;
+ }
+
+ .addField {
+  width:90%;  
+ }
+.addFieldBtn {
+  
+}
+@media screen and (max-width: 1024px) {
+
+    .header {
+        height:50px;
+    }
+    .cells {
+        height:auto;
+    }
+    .action-name {
+        width:300px;
+    }
+    .manage {
+        width:80px;
+    }
+    .edit-container {
+        width:200px;
+        input {
+            width:90%;
+        }
+    }
+    .addItem {
+        width: 640px
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .header {
+        height:80px;
+        font-size: 0.8em
+    }
+    .cells {
+        height:auto;
+        font-size: 0.8em
+    }
+    .action-name {
+        width:250px;
+    }
+    .manage {
+        width:80px;
+    }
+    .edit-container {
+        width:100px;
+        input {
+            width:90%;
+        }
+    }
+
+    .addItem {
+        width: 490px;
+    }
+    .add1 {
+        width: 100%;
+    }
+    .add2 {
+        width: 100%;
+        position: relative;
+        top:10px;
+        .addFieldBtn {
+            width: 91%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .addItem {
+        width: 100% !important;
+    }
+    .header {
+    
+        font-size: 0.8em
+    }
+    .cells {
+       height:auto;
+        font-size: 0.8em
+    }
+    .action-name {
+        width:125px;
+    }
+    .manage {
+        width:80px;
+    }
+    .edit-container {
+        width:100px;
+        input {
+            width:90%;
+        }
+    }
+    .addItem {
+        width: 365px
+    }
+}
+
+
+
