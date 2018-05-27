@@ -72,9 +72,11 @@ ALTER TABLE
 
     b. Go to client/todo-app/ , open your cmd or use git bash here .  
  
-    After you open the console, type : 'npm start' , hit enter and wait until it says
+    After you open the console, type : 'npm install' , hit enter and wait until it installs the packages,
 
-    'webpack: Compiled successfully.' then open your browser and go to 
+    type : 'npm start'   hit enter and when it says 'webpack: Compiled successfully.' 
+
+    then open your browser and go to :
 
     http://localhost:4200/home . If every thing works well, you should be able to see
 
